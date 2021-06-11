@@ -17,8 +17,7 @@ csvFileName = "web_scrape"+date
 
 csv_file = open(csvFileName+'.csv', 'w', encoding="utf-8")
 csv_writer = csv.writer(csv_file)
-csv_writer.writerow(['name', 'year', 'mileage', 'transmissin',
-                    'fuel', 'link', 'warranty', 'price'])
+csv_writer.writerow(['name', 'year', 'mileage', 'transmissin', 'fuel', 'link', 'warranty', 'price'])
 
 
 session = HTMLSession()
@@ -134,6 +133,9 @@ print('Hello, beautifull')
 # Phase 2: Save to csv file (car name, reg. year, mileage, auto or mech, fuel type, link to the details, varranty, PRICE) DONE
 # Phase 3: Compare the two last file between eachother DONE
 # Phase 4: if difference found, send the difference to the communication medium. DONE
-# Phase 4.1: Ignore if the difference includes Mechanine or Dyzelinas
+# Phase 4.1: Ignore if the difference includes Mechanine or DyzelinasDONE
 # Phase 4.5: delete the old file and save the new one as _old for further comparison
+
 # Phase 5: config the comms
+#Make this run semi periodically
+#set it up on raspberry
